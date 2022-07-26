@@ -144,7 +144,6 @@ function DesktopHeader({countryCode, isHome, menu, openCart, title}) {
           {title}
         </Link>
         <nav className="flex gap-8">
-          {/* Top level menu items */}
           {(menu?.items || []).map((item) => (
             <Link key={item.id} to={item.to} target={item.target}>
               {item.title}
